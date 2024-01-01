@@ -1,0 +1,94 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Папіломавірусна інфекція (ВПЛ) – поширена статева інфекція.
+     Вірус папіломи людини (HPV) і його види. Фактори ризику зараження. Симптоми та лікування папіломавірусної інфекції
+      у жінок і чоловіків. Профілактика та медичні огляди у гінеколога.">
+
+    <meta name="keywords" content="папіломавірусна інфекція, ВПЛ, вірус папіломи людини, HPV, фактори ризику,
+    сексуальні контакти, імунітет, ерозія шийки матки, противірусна терапія, імунотерапія, лікування ВПЛ, гінекологічні огляди,
+     профілактика папіломавірусної інфекції">
+
+    <meta name="author" content="Віктор Косменюк">
+
+
+    {% block title %}
+        Лікування ВПЛ | Віктор Косменюк
+    {% endblock %}
+</head>
+
+
+
+{% block content %}
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <h1 class="display-3 text-white mb-3 animated slideInDown">Лікування ВПЛ</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb text-uppercase mb-0">
+                    <li class="breadcrumb-item"><a class="text-white" href="{% url 'home' %}">Головна</a></li>
+                    <li class="breadcrumb-item"><a class="text-white" href="{% url 'methods' %}">Методи Лікування</a></li>
+                    <li class="breadcrumb-item"><a class="text-white" href="{% url 'diagnose_methods' %}">Лікувально-Терапевтичні Методи</a></li>
+                    <li class="breadcrumb-item text-primary active" aria-current="page">Лікування ВПЛ</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+   <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <p class="d-inline-block border rounded-pill py-1 px-4">Методи</p>
+                <h1>Лікування ВПЛ</h1>
+            </div>
+
+            <div class="wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <div class="text-color size-text">
+                        <p><strong style="font-size: 25px;">Папіломавірусна інфекція (ВПЛ).</strong> Вірусом папіломи людини інфікується до
+                            80% сексуально активного населення, серед якого більшу частину займають жінки.</p>
+
+                        <p><strong>Вірус папіломи людини (HPV, Human papillomavirus, ВПЛ)</strong> — це група надзвичайно поширених
+                            і генетично різнорідних ДНК-вірусів, які вражають епітелій шкірних покривів і слизових оболонок.
+                            На цей час, виявлено і вивчено понад 120 типів HPV. Потенційно небезпечними у плані онкології
+                            є близько 30 типів ВПЛ, які передаються статевим шляхом. До групи високого онкогенного ризику
+                            відносять ВПЛ 16, 18, 31, 33, 39, 50, 59, 64, 68 та 70 типів, а середнього – 30, 35, 45, 52,
+                            53, 56 та 58 типів. Інші асоційовані з низьким ризиком раку. Зокрема, до них належать ВПЛ 6
+                            і 11 типу, які найчастіше провокують розвиток генітальних бородавок.</p>
+
+                        <p><strong>Фактори ризику зараження папіломавірусу людини:</strong></p>
+                        <ul>
+                          <li>Сексуальні контакти в ранньому віці;</li>
+                          <li>Велика кількість партнерів;</li>
+                          <li>Слабкий імунітет;</li>
+                          <li>Ерозія шийки матки. Зараження вірусом також відбувається і побутовим шляхом.</li>
+                        </ul>
+
+                        <p><strong>Вірус папіломи у жінок і чоловіків протягом тривалого періоду не має клінічної картини.</strong>
+                            Саме тому, є важливими регулярні медичні профілактичні огляди у гінеколога.</p>
+
+                        <p><strong>Специфічних препаратів для терапії ВПЛ поки що немає</strong>. Лікування вірусу папіломи людини в
+                            жінок та чоловіків – це насамперед противірусна терапія, яка пригнічує активність ВПЛ і
+                            усуває клінічні прояви захворювання. Для терапії папіломавірусної інфекції застосовують
+                            імунотерапію разом із симптоматичним лікуванням.</p>
+                    </div>
+
+                    <br><br>
+                    <a class="btn btn-primary rounded-pill py-3 px-5 mt-3" href="{% url 'healing_methods' %}">Назад</a>
+                </div>
+            </div>
+       </div>
+   </div>
+   </div>
+   </div>
+
+
+{% endblock %}

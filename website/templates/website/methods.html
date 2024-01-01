@@ -1,0 +1,188 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Діагностика та лікування гінекологічних захворювань від лікаря-гінеколога Віктора Косменюка.
+     Надаємо послуги з діагностичних методів, оперативних методів та лікувально-терапевтичних методів. Запишіться на консультацію
+      та отримайте ефективне лікування." />
+
+    <meta name="keywords" content="гінеколог, діагностика гінекології, лікування захворювань, діагностичні методи,
+     оперативні методи, лікувально-терапевтичні методи, постановка МВС, гістероскопія, лікування інфекцій, лікування ВПЛ,
+      консультація гінеколога, Віктор Косменюк" />
+
+    <meta name="author" content="Віктор Косменюк">
+
+
+    {% block title %}
+        Діагностика та Лікування | Віктор Косменюк
+    {% endblock %}
+</head>
+
+
+
+{% block content %}
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <h1 class="display-3 text-white mb-3 animated slideInDown">Методи Лікування</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb text-uppercase mb-0">
+                    <li class="breadcrumb-item"><a class="text-white" href="{% url 'home' %}">Головна</a></li>
+                    <li class="breadcrumb-item text-primary active" aria-current="page">Методи Лікування</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+
+    <!-- Service Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <p class="d-inline-block border rounded-pill py-1 px-4">Послуги</p>
+                <h1>Діагностика та Лікування</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item bg-light rounded h-100 p-5 post-item">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style="width: 65px; height: 65px;">
+                            <i class="fa fa-user-md text-primary fs-4"></i>
+                        </div>
+                        <a href="{% url 'diagnose_methods' %}"><h4 class="mb-3">Діагностичні Методи</h4></a>
+                        <div class="mb-4">
+                            <ul class="list-unstyled body-text">
+                                <li><i class="far fa-check-circle text-primary me-3"></i> Кольпоскопія, Біопсія шийки матки</li>
+                                <li><i class="far fa-check-circle text-primary me-3"></i> Офісна гістероскопія, Біопсія ендометрія</li>
+                            </ul>
+                        </div>
+                        <div class="read-more">
+                            <a class="btn" href="{% url 'diagnose_methods' %}" style="color: #007BFF; background-color: #fff;"><i class="fa fa-plus text-primary me-3"></i>Читати Далі</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item bg-light rounded h-100 p-5 post-item">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style="width: 65px; height: 65px;">
+                            <i class="fa fa-heartbeat text-primary fs-4"></i>
+                        </div>
+                        <a href="{% url 'quick_methods' %}"><h4 class="mb-3">Оперативні Методи</h4></a>
+                        <div class="mb-4">
+                            <ul class="list-unstyled body-text">
+                                <li><i class="far fa-check-circle text-primary me-3"></i> Гістероскопія</li>
+                                <li><i class="far fa-check-circle text-primary me-3"></i> Радіохвильове лікування патологій шийки матки</li>
+                                <li><i class="far fa-check-circle text-primary me-3"></i> Лапароскопія</li>
+                                <li><i class="far fa-check-circle text-primary me-3"></i> Лапаротомія</li>
+                                <li><i class="far fa-check-circle text-primary me-3"></i> Вульвектомія</li>
+                                <li><i class="far fa-check-circle text-primary me-3"></i> Лікування нетримання сечі</li>
+                                <li><i class="far fa-check-circle text-primary me-3"></i> Вагінальна пластика</li>
+                                <li><i class="far fa-check-circle text-primary me-3"></i> Естетична гінекологія</li>
+                            </ul>
+                        </div>
+                        <div class="read-more">
+                            <a class="btn" href="{% url 'quick_methods' %}" style="color: #007BFF; background-color: #fff;"><i class="fa fa-plus text-primary me-3"></i>Читати Далі</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item bg-light rounded h-100 p-5 post-item">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style="width: 65px; height: 65px;">
+                            <i class="fa fa-pills text-primary fs-4"></i>
+                        </div>
+                        <a href="{% url 'healing_methods' %}"><h4 class="mb-3">Лікувально-Терапевтичні Методи</h4></a>
+                        <div class="mb-4">
+                            <ul class="list-unstyled body-text">
+                                <li><i class="far fa-check-circle text-primary me-3"></i> Постановка МВС (Мірена, Джайдес)</li>
+                                <li><i class="far fa-check-circle text-primary me-3"></i> Лікування інфекцій, що передаються статевим шляхом</li>
+                                <li><i class="far fa-check-circle text-primary me-3"></i> Лікування ВПЛ</li>
+                            </ul>
+                        </div>
+                        <div class="read-more">
+                            <a class="btn" href="{% url 'healing_methods' %}" style="color: #007BFF; background-color: #fff;"><i class="fa fa-plus text-primary me-3"></i>Читати Далі</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Appointment Start -->
+      <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <p class="d-inline-block border rounded-pill py-1 px-4">Консультація</p>
+                    <h1 class="mb-4">Запишіться на Консультацію</h1>
+                    <p class="mb-4">Якщо у вас виникли питання, зателефонуйте або напишіть мені!</p>
+                    <div class="bg-light rounded d-flex align-items-center p-5 mb-4">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white" style="width: 55px; height: 55px;">
+                            <i class="fa fa-phone-alt text-primary"></i>
+                        </div>
+                        <div class="ms-4">
+                            <p class="mb-2">Зателефонуйте мені</p>
+                            <h5 class="mb-0">+380 (67) 790 44 86</h5>
+                        </div>
+                    </div>
+                    <div class="bg-light rounded d-flex align-items-center p-5">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white" style="width: 55px; height: 55px;">
+                            <i class="fa fa-envelope-open text-primary"></i>
+                        </div>
+                        <div class="ms-4">
+                            <p class="mb-2">Електронна пошта</p>
+                            <h5 class="mb-0">Victorkosmenuk@gmail.com</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="bg-light rounded h-100 d-flex align-items-center p-5">
+                        <form action="{% url "success_appointment" %}" method="post">
+                            {% csrf_token %}
+                            <div class="row g-3">
+                                <div class="col-12 col-sm-6">
+                                    <div class="form-floating">
+                                        <input type="text" name='your-name' class="form-control" placeholder="" required id="name" style="height: 55px;" autocomplete="name">
+                                        <label for="name" >Ваше Ім'я</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <div class="form-floating">
+                                        <input type="text" name='your-phone' class="form-control" placeholder="" required id="phone" style="height: 55px;" autocomplete="tel">
+                                        <label for="phone" >Контактний номер</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12">
+                                    <div class="form-floating">
+                                        <input type="text" name='your-email' class="form-control" placeholder="" required id="email" style="height: 55px;" autocomplete="email">
+                                        <label for="email" >E-Mail</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" name='your-text' placeholder="" id="message" style="height: 100px"></textarea>
+                                        <label for="message">Коментар та Побажання</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-100 py-3" type="submit">Відправити</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Appointment End -->
+
+
+{% endblock %}

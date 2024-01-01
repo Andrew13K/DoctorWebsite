@@ -1,0 +1,112 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Запишіться на консультацію у лікаря акушера-гінеколога Віктора Косменюка.
+     Звертайтеся за телефоном +380 (67) 790 44 86 або залиште свої контактні дані через електронну пошту VictorKosmenuk@gmail.com.
+      Оформіть онлайн-запит на консультацію, і отримайте відповіді на всі ваші питання від професіонала з
+       понад 20-річним стажем роботи." />
+
+    <meta name="keywords" content="Консультація лікаря, запис на консультацію, акушер-гінеколог,
+     контактний номер, електронна пошта, онлайн-запит, ваше ім'я, контактний номер, е-mail, коментар,
+      побажання, Віктор Косменюк, +380 (67) 790 44 86, VictorKosmenuk@gmail.com" />
+    <meta name="author" content="Віктор Косменюк">
+
+
+    {% block title %}
+        Консультація | Віктор Косменюк
+    {% endblock %}
+</head>
+
+
+
+{% block content %}
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <h1 class="display-3 text-white mb-3 animated slideInDown">Консультація</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb text-uppercase mb-0">
+                    <li class="breadcrumb-item"><a class="text-white" href="{% url 'home' %}">Головна</a></li>
+                    <li class="breadcrumb-item text-primary active" aria-current="page">Консультація</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+    <!-- Appointment Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <p class="d-inline-block border rounded-pill py-1 px-4">Консультація</p>
+                    <h1 class="mb-4">Запишіться на Консультацію</h1>
+                    <p class="mb-4">Якщо у вас виникли питання, зателефонуйте або напишіть мені!</p>
+                    <div class="bg-light rounded d-flex align-items-center p-5 mb-4">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white" style="width: 55px; height: 55px;">
+                            <i class="fa fa-phone-alt text-primary"></i>
+                        </div>
+                        <div class="ms-4">
+                            <p class="mb-2">Зателефонуйте мені</p>
+                            <h5 class="mb-0">+380 (67) 790 44 86</h5>
+                        </div>
+                    </div>
+                    <div class="bg-light rounded d-flex align-items-center p-5">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white" style="width: 55px; height: 55px;">
+                            <i class="fa fa-envelope-open text-primary"></i>
+                        </div>
+                        <div class="ms-4">
+                            <p class="mb-2">Електронна пошта</p>
+                            <h5 class="mb-0">Victorkosmenuk@gmail.com</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="bg-light rounded h-100 d-flex align-items-center p-5">
+                        <form action="{% url "success_appointment" %}" method="post">
+                            {% csrf_token %}
+                            <div class="row g-3">
+                                <div class="col-12 col-sm-6">
+                                    <div class="form-floating">
+                                        <input type="text" name='your-name' class="form-control" placeholder="" required id="name" style="height: 55px;">
+                                        <label for="name" >Ваше Ім'я</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <div class="form-floating">
+                                        <input type="text" name='your-phone' class="form-control" placeholder="" required id="phone" style="height: 55px;">
+                                        <label for="phone" >Контактний номер</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12">
+                                    <div class="form-floating">
+                                        <input type="text" name='your-email' class="form-control" placeholder="" required id="email" style="height: 55px;">
+                                        <label for="email" >E-Mail</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" name='your-text' placeholder="" id="message" style="height: 100px"></textarea>
+                                        <label for="message">Коментар та Побажання</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-100 py-3" type="submit">Відправити</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Appointment End -->
+{% endblock %}

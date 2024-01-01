@@ -1,0 +1,86 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+{% block title %}
+    Створити новий Пост
+{% endblock %}
+
+
+
+{% block content %}
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <h1 class="display-3 text-white mb-3 animated slideInDown">Новини</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb text-uppercase mb-0">
+                    <li class="breadcrumb-item"><a class="text-white" href="{% url 'home' %}">Головна</a></li>
+                    <li class="breadcrumb-item"><a class="text-white" href="{% url 'blog' %}">Новини</a></li>
+                    <li class="breadcrumb-item text-primary active" aria-current="page">Додати Пост</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    {% if user.is_authenticated %}
+    <!-- Page Header End -->
+    <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <p class="d-inline-block border rounded-pill py-1 px-4">Пост</p>
+                <h1>Створити Пост</h1>
+    </div>
+        <div class="container col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+        <div class="bg-light rounded h-100 d-flex align-items-center p-5">
+            <form method="post" class="max-auto text-center">
+                {% csrf_token %}
+                {{ form.media }}
+                <div class="row g-3">
+                    <div class="col-12 col-sm-6">
+                        <div class="form-floating">
+                            {{ form.title }}
+                            <label for="{{ form.title.id_for_label }}">Заголовок</label>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <div class="form-floating">
+                            {{ form.post_photo }}
+                            <label for="{{ form.post_photo.id_for_label }}">Фото URL</label>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <div class="form-floating">
+                            {{ form.title_tag }}
+                            <label for="{{ form.title_tag.id_for_label }}">Теги</label>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <div class="form-floating">
+                            {{ form.author }}
+                            <label for="{{ form.author.id_for_label }}">Автор</label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-floating">
+                            {{ form.body }}
+                            <label for="{{ form.body.id_for_label }}"></label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button class="btn btn-primary w-100 py-3" type="submit">Створити</button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+        </div>
+    <br><br>
+    <div class="container col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+        <a class="btn btn-primary rounded-pill py-3 px-5 mt-3" href="{% url 'blog' %}">Назад</a>
+    </div>
+
+    <br><br><br>
+        {% else %}
+    <div class="container text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+        <h1>Ви не війшли в акаунт!</h1><br><br><br>
+    </div>
+{% endif %}
+
+{% endblock %}

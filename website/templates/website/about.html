@@ -1,0 +1,262 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Дізнайтеся більше про лікаря акушера-гінеколога Віктора Юрійовича Косменюка.
+     З більш як 20-річним стажем роботи, лікар вищої категорії, спеціалізується на
+      онкогінекології та репродуктивному здоров'ї. Ознайомтеся з його освітою, досвідом роботи та участю в наукових заходах." />
+
+    <meta name="keywords" content="Лікар акушер-гінеколог, онкогінеколог, репродуктивне здоров'я,
+     освіта лікаря, медичний стаж, гістероскопія, лапароскопія, естетична гінекологія, конференції з
+     гінекології, онкологічні заходи, участь в медичних семінарах, реконструктивна пластична хірургія в
+     гінекології, майстер-класи з гінекології, конференція UpToDate 4.0, молекулярні зустрічі" />
+    <meta name="author" content="Віктор Косменюк">
+
+
+    {% block title %}
+        Про Лікаря | Віктор Косменюк
+    {% endblock %}
+</head>
+
+
+
+{% block content %}
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <h1 class="display-3 text-white mb-3 animated slideInDown">Про Лікаря</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb text-uppercase mb-0">
+                    <li class="breadcrumb-item"><a class="text-white" href="{% url 'home' %}">Головна</a></li>
+                    <li class="breadcrumb-item text-primary active" aria-current="page">Про Лікаря</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+
+    <!-- About Start -->
+
+    <div class="container">
+        <div class="row g-2">
+            <div class="col-lg-6 order-2 order-lg-1 wow fadeInUp" data-wow-delay="0.1s">
+                <p class="d-inline-block border rounded-pill py-1 px-4">Про Лікаря</p>
+                <h1 class="mb-4">Косменюк Віктор Юрійович</h1>
+                <div class="text-color size-text">
+                        <p><strong>Лікар акушер-гінеколог,</strong> гінеколог-онколог вищої категорії. Стаж роботи понад 20 років.</p>
+
+                        <p class="mb-4"><strong>2001-го року</strong> закінчив з відзнакою Одеський державний медичний університет
+                            за спеціальністю «Лікувальна справа».</p>
+
+                        <p class="mb-4"><strong>З 2001-го по 2003-тій рік</strong> пройшов інтернатуру на кафедрі акушерства та гінекології Одеського
+                            державного медичного університету на базі Пологового будинку №5 та Одеського обласного онкологічного диспансеру.</p>
+
+                        <p class="mb-4"><strong>З 2003-го по 2006-тий рік</strong> працював лікарем-ординатором у Пологовому будинку м. Іллічівськ.</p>
+
+                        <p class="mb-4"><strong>З 2006-го року і по теперішній час</strong> працює в КНП «Одеський регіональний клінічний протипухлинний центр»
+                            ООР на посаді лікаря-ординатора онкогінекологічного відділення, веде амбулаторний прийом пацієнтів
+                            у поліклінічно-діагностичному відділенні.</p>
+                    </div>
+                </div>
+                        <div class="col-lg-12 order-2 order-lg-2 wow fadeIn" data-wow-delay="0.1s">
+                            <div class="text-color size-text">
+                            <p class="mb-4"><strong>З 2016-го року</strong> – гінеколог-онколог вищої категорії. </p>
+
+                            <p class="mb-4"><strong>У 2016-му році</strong> отримав спеціалізацію з гістероскопії та лапароскопії,
+                                закінчив Академію естетичної гінекології.</p>
+
+                            <p class="mb-4"><strong>У 2018-му році</strong> пройшов підвищення кваліфікації у галузі естетичної гінекології.
+                                Віктор Юрійович бере активну участь у всіх знакових вітчизняних та міжнародних наукових медичних
+                                форумах, присвячених питанням онкогінекології. Щороку проходить тренінги та курси з вдосконалення
+                                навиків консервативного ведення та хірургічного лікування пацієнток з різною патологією.
+                                Зокрема, протягом останніх 3-ох років брав участь у наступних конференціях та семінарах:</p>
+
+                            <p><i class="far fa-check-circle text-primary me-3"></i><strong>Integrative Healthcare Sympos.</strong> Нові горизонти внутрішньої медицини та
+                                хірургії 2021 (м. Запоріжжя, 7-8 травня 2021р).</p>
+
+                            <p><i class="far fa-check-circle text-primary me-3"></i><strong>Семінар «Ендометріоз</strong>, генітальний пролапс,
+                                гінекологічний рак» (м.Одеса, 18-19 червня 2021р).</p>
+
+                            <p><i class="far fa-check-circle text-primary me-3"></i><strong>XIV з’їзд онкологів та радіологів України</strong>, присвяченому
+                                100-річчю Національного інституту раку (м.Київ, 30 вересня - 2 жовтня 2021р).</p>
+
+                            <p><i class="far fa-check-circle text-primary me-3"></i><strong>Семінар «Експансивна хірургія в гінекології:
+                                ендометріоз, пролапс, рак»</strong> (м.Одеса,  27-28 листопада 2021р).</p>
+
+                            <p><i class="far fa-check-circle text-primary me-3"></i><strong>Семінар «Реконструктивна пластична хірургія в гінекології
+                                (генітальний пролапс)»</strong> (м.Київ, 18-19 серпня 2022р).</p>
+
+                            <p><i class="far fa-check-circle text-primary me-3"></i><strong>Семінар «Інноваційні підходи в лікуванні
+                                генітального пролапсу»</strong> (м. Київ, 20-21 жовтня 2022р).</p>
+
+                            <p><i class="far fa-check-circle text-primary me-3"></i>Міжнародна онлайн-конференція <strong>«Експансивна хірургія в гінекології:
+                                ендометріоз, пролапс, рак»</strong> (м.Київ, 27-28 листопада 2022р).</p>
+
+                            <p><i class="far fa-check-circle text-primary me-3"></i>Майстер-клас <strong>«Реконструктивна пластична хірургія в гінекології
+                                (генітальний пролапс)»</strong> (м.Дніпро, 28-29 вересня 2023р).</p>
+
+                            <p><i class="far fa-check-circle text-primary me-3"></i><strong>Конференція «UpToDate 4.0 + молекулярні зустрічі»</strong>
+                                (м.Київ, 23-24 листопада 2023р).</p>
+                        </div>
+                        </div>
+
+            <div class="col-lg-6 order-1 order-lg-1 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="d-flex flex-column">
+                    <img class="img-fluid rounded w-75 align-self-end float-start me-3 " src="{% static 'website/img/laptop.jpg' %}" alt="" style="margin-top: 10%;">
+                    <img class="img-fluid rounded w-50 bg-white pt-3 pe-3 float-start" src="{% static 'website/img/main_page.jpg' %}" alt="" style="margin-top: -25%; margin-bottom: 15%;">
+                </div>
+            </div>
+            </div>
+        </div>
+
+    <!-- About End -->
+
+
+    <!-- Feature Start -->
+    <div class="container-fluid bg-primary overflow-hidden my-5 px-lg-0">
+        <div class="container feature px-lg-0">
+            <div class="row g-0 mx-lg-0">
+                <div class="col-lg-6 feature-text py-5 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="p-lg-5 ps-lg-0">
+                        <p class="d-inline-block border rounded-pill text-light py-1 px-4">Особливості</p>
+                        <h1 class="text-white mb-4">Переваги</h1>
+                        <p class="text-white mb-4 pb-2">Лікар з великим стажем роботи, має можливість використовувати передові
+                            медичні технології та новітні методи лікування, забезпечуючи високу якість
+                            медичної допомоги своїм пацієнтам.</p>
+                        <div class="row g-4">
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light" style="width: 55px; height: 55px;">
+                                        <i class="fa fa-user-md text-primary"></i>
+                                    </div>
+                                    <div class="ms-4">
+                                        <p class="text-white mb-2">Досвідчений</p>
+                                        <h5 class="text-white mb-0">Лікар</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light" style="width: 55px; height: 55px;">
+                                        <i class="fa fa-check text-primary"></i>
+                                    </div>
+                                    <div class="ms-4">
+                                        <p class="text-white mb-2">Якісне</p>
+                                        <h5 class="text-white mb-0">Лікування</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light" style="width: 55px; height: 55px;">
+                                        <i class="fa fa-comment-medical text-primary"></i>
+                                    </div>
+                                    <div class="ms-4">
+                                        <p class="text-white mb-2">Позитивні</p>
+                                        <h5 class="text-white mb-0">Консультацій</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light" style="width: 55px; height: 55px;">
+                                        <i class="fa fa-headphones text-primary"></i>
+                                    </div>
+                                    <div class="ms-4">
+                                        <p class="text-white mb-2">Завжди</p>
+                                        <h5 class="text-white mb-0">На зв'язку</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 pe-lg-0 wow fadeIn" data-wow-delay="0.5s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute img-fluid w-100 h-100" src="{% static 'website/img/operation_room.jpg' %}" style="object-fit: cover;" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Feature End -->
+
+    <!-- Appointment Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <p class="d-inline-block border rounded-pill py-1 px-4">Консультація</p>
+                    <h1 class="mb-4">Запишіться на Консультацію</h1>
+                    <p class="mb-4">Якщо у вас виникли питання, зателефонуйте або напишіть мені!</p>
+                    <div class="bg-light rounded d-flex align-items-center p-5 mb-4">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white" style="width: 55px; height: 55px;">
+                            <i class="fa fa-phone-alt text-primary"></i>
+                        </div>
+                        <div class="ms-4">
+                            <p class="mb-2">Зателефонуйте мені</p>
+                            <h5 class="mb-0">+380 (67) 790 44 86</h5>
+                        </div>
+                    </div>
+                    <div class="bg-light rounded d-flex align-items-center p-5">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white" style="width: 55px; height: 55px;">
+                            <i class="fa fa-envelope-open text-primary"></i>
+                        </div>
+                        <div class="ms-4">
+                            <p class="mb-2">Електронна пошта</p>
+                            <h5 class="mb-0">Victorkosmenuk@gmail.com</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="bg-light rounded h-100 d-flex align-items-center p-5">
+                        <form action="{% url "success_appointment" %}" method="post">
+                            {% csrf_token %}
+                            <div class="row g-3">
+                                <div class="col-12 col-sm-6">
+                                    <div class="form-floating">
+                                        <input type="text" name='your-name' class="form-control" placeholder="" required id="name" style="height: 55px;" autocomplete="name">
+                                        <label for="name" >Ваше Ім'я</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <div class="form-floating">
+                                        <input type="text" name='your-phone' class="form-control" placeholder="" required id="phone" style="height: 55px;" autocomplete="tel">
+                                        <label for="phone" >Контактний номер</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12">
+                                    <div class="form-floating">
+                                        <input type="text" name='your-email' class="form-control" placeholder="" required id="email" style="height: 55px;" autocomplete="email">
+                                        <label for="email" >E-Mail</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" name='your-text' placeholder="" id="message" style="height: 100px"></textarea>
+                                        <label for="message">Коментар та Побажання</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-100 py-3" type="submit">Відправити</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Appointment End -->
+
+
+{% endblock %}
